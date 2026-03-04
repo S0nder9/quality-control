@@ -1,14 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "16T0VCV5BsM=",
+  "dgSpecHash": "TYCI0gx/5IU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\albertlox\\OneDrive\\Рабочий стол\\PDFKALSH\\Backend\\Backend.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\albertlox\\.nuget\\packages\\pdfpig\\0.1.13\\pdfpig.0.1.13.nupkg.sha512",
-    "C:\\Users\\albertlox\\.nuget\\packages\\pdfsharpcore\\1.3.67\\pdfsharpcore.1.3.67.nupkg.sha512",
-    "C:\\Users\\albertlox\\.nuget\\packages\\sharpziplib\\1.4.2\\sharpziplib.1.4.2.nupkg.sha512",
-    "C:\\Users\\albertlox\\.nuget\\packages\\sixlabors.fonts\\1.0.0-beta17\\sixlabors.fonts.1.0.0-beta17.nupkg.sha512",
-    "C:\\Users\\albertlox\\.nuget\\packages\\sixlabors.imagesharp\\1.0.4\\sixlabors.imagesharp.1.0.4.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\npatr\\OneDrive\\Документы\\GitHub\\quality-control\\Backend\\Backend.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

@@ -41,3 +41,31 @@ C:\Users\albertlox\OneDrive\Рабочий стол\PDFKALSH\Backend\bin\Debug\n
 C:\Users\albertlox\OneDrive\Рабочий стол\PDFKALSH\Backend\bin\Debug\net9.0\UglyToad.PdfPig.Tokenization.dll
 C:\Users\albertlox\OneDrive\Рабочий стол\PDFKALSH\Backend\bin\Debug\net9.0\UglyToad.PdfPig.Tokens.dll
 C:\Users\albertlox\OneDrive\Рабочий стол\PDFKALSH\Backend\bin\Debug\net9.0\UglyToad.PdfPig.dll
+C:\Users\npatr\OneDrive\Документы\GitHub\quality-control\Backend\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\npatr\OneDrive\Документы\GitHub\quality-control\Backend\bin\Debug\net9.0\appsettings.json
+C:\Users\npatr\OneDrive\Документы\GitHub\quality-control\Backend\bin\Debug\net9.0\Backend.staticwebassets.endpoints.json
+C:\Users\npatr\OneDrive\Документы\GitHub\quality-control\Backend\bin\Debug\net9.0\Backend.exe
+C:\Users\npatr\OneDrive\Документы\GitHub\quality-control\Backend\bin\Debug\net9.0\Backend.deps.json
+C:\Users\npatr\OneDrive\Документы\GitHub\quality-control\Backend\bin\Debug\net9.0\Backend.runtimeconfig.json
+C:\Users\npatr\OneDrive\Документы\GitHub\quality-control\Backend\bin\Debug\net9.0\Backend.dll
+C:\Users\npatr\OneDrive\Документы\GitHub\quality-control\Backend\bin\Debug\net9.0\Backend.pdb
+C:\Users\npatr\OneDrive\Документы\GitHub\quality-control\Backend\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\npatr\OneDrive\Документы\GitHub\quality-control\Backend\obj\Debug\net9.0\Backend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\npatr\OneDrive\Документы\GitHub\quality-control\Backend\obj\Debug\net9.0\Backend.AssemblyInfoInputs.cache
+C:\Users\npatr\OneDrive\Документы\GitHub\quality-control\Backend\obj\Debug\net9.0\Backend.AssemblyInfo.cs
+C:\Users\npatr\OneDrive\Документы\GitHub\quality-control\Backend\obj\Debug\net9.0\Backend.csproj.CoreCompileInputs.cache
+C:\Users\npatr\OneDrive\Документы\GitHub\quality-control\Backend\obj\Debug\net9.0\Backend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\npatr\OneDrive\Документы\GitHub\quality-control\Backend\obj\Debug\net9.0\Backend.sourcelink.json
+C:\Users\npatr\OneDrive\Документы\GitHub\quality-control\Backend\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\npatr\OneDrive\Документы\GitHub\quality-control\Backend\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\npatr\OneDrive\Документы\GitHub\quality-control\Backend\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\npatr\OneDrive\Документы\GitHub\quality-control\Backend\obj\Debug\net9.0\scopedcss\bundle\Backend.styles.css
+C:\Users\npatr\OneDrive\Документы\GitHub\quality-control\Backend\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\npatr\OneDrive\Документы\GitHub\quality-control\Backend\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\npatr\OneDrive\Документы\GitHub\quality-control\Backend\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\npatr\OneDrive\Документы\GitHub\quality-control\Backend\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\npatr\OneDrive\Документы\GitHub\quality-control\Backend\obj\Debug\net9.0\Backend.dll
+C:\Users\npatr\OneDrive\Документы\GitHub\quality-control\Backend\obj\Debug\net9.0\refint\Backend.dll
+C:\Users\npatr\OneDrive\Документы\GitHub\quality-control\Backend\obj\Debug\net9.0\Backend.pdb
+C:\Users\npatr\OneDrive\Документы\GitHub\quality-control\Backend\obj\Debug\net9.0\Backend.genruntimeconfig.cache
+C:\Users\npatr\OneDrive\Документы\GitHub\quality-control\Backend\obj\Debug\net9.0\ref\Backend.dll

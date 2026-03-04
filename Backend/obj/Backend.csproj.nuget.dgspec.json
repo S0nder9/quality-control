@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\albertlox\\OneDrive\\Рабочий стол\\PDFKALSH\\Backend\\Backend.csproj": {}
+    "C:\\Users\\npatr\\OneDrive\\Документы\\GitHub\\quality-control\\Backend\\Backend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\albertlox\\OneDrive\\Рабочий стол\\PDFKALSH\\Backend\\Backend.csproj": {
+    "C:\\Users\\npatr\\OneDrive\\Документы\\GitHub\\quality-control\\Backend\\Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\albertlox\\OneDrive\\Рабочий стол\\PDFKALSH\\Backend\\Backend.csproj",
+        "projectUniqueName": "C:\\Users\\npatr\\OneDrive\\Документы\\GitHub\\quality-control\\Backend\\Backend.csproj",
         "projectName": "Backend",
-        "projectPath": "C:\\Users\\albertlox\\OneDrive\\Рабочий стол\\PDFKALSH\\Backend\\Backend.csproj",
-        "packagesPath": "C:\\Users\\albertlox\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\albertlox\\OneDrive\\Рабочий стол\\PDFKALSH\\Backend\\obj\\",
+        "projectPath": "C:\\Users\\npatr\\OneDrive\\Документы\\GitHub\\quality-control\\Backend\\Backend.csproj",
+        "packagesPath": "C:\\Users\\npatr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\npatr\\OneDrive\\Документы\\GitHub\\quality-control\\Backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\albertlox\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\npatr\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -43,16 +43,6 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "dependencies": {
-            "PdfPig": {
-              "target": "Package",
-              "version": "[0.1.13, )"
-            },
-            "PdfSharpCore": {
-              "target": "Package",
-              "version": "[1.3.67, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -72,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

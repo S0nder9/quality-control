@@ -7,6 +7,7 @@ using Backend.Controllers;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddScoped<IFileService, FileService>();
+builder.Services.AddHttpClient<INeuralService, NeuralService>();
 builder.Services.AddControllers();
 
 var app = builder.Build();

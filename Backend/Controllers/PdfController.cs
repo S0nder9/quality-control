@@ -8,10 +8,12 @@ namespace Backend.Controllers
     public class PdfController : ControllerBase
     {
         private readonly IFileService _fileService;
+        private readonly INeuralService _neuralService;
 
-        public PdfController(IFileService fileService)
+        public PdfController(IFileService fileService, INeuralService neuralService)
         {
             _fileService = fileService;
+            _neuralService = neuralService;
         }
 
         [HttpPost("upload")]
@@ -20,7 +22,7 @@ namespace Backend.Controllers
             if (files == null || files.Count == 0)
                 return BadRequest("Файлы не загружены");
 
-            var savedFiles = new List<string>(); // Массив строк абсолютных пустей файлов, которые храняться в папке Storage / Originals. Эти файлы были только что сохранены, то есть не все, которые есть в папке. Позже будем отправлять этот пусть нейронке
+            var savedFiles = new List<string>();
 
             Console.WriteLine($"Получено {files.Count} файлов");
 
@@ -32,13 +34,9 @@ namespace Backend.Controllers
 
             Console.WriteLine($"Сохранено {savedFiles.Count} файлов");
 
-            // Здесь сделай вызов функции отправки данных нейронке
+            var analysisResult = await _neuralService.AnalyzeAsync(savedFiles);
 
-            return Ok(new
-            {
-                message = "Файлы успешно загружены",
-                files = savedFiles
-            }); // Это измени, отправляй json с ошибками, который я тебе скидывал
+            return Ok(analysisResult);
         }
     }
 }

@@ -1,16 +1,19 @@
 import { api } from "@/config";
 
 export const usePDF = () => {
-    const sentPDFs = async (metaData: any) => {
-        try {
-            console.log("Отправка данных...", metaData);
-            const response = await api.post("/upload", metaData);
-            return response.data;
-        } catch (error) {
-            console.error("Ошибка при отправке PDF:", error);
-            throw error;
-        }
-    };
+  const uploadPDFs = async (formData: FormData) => {
+    try {
+      const response = await api.post("/pdf/upload", formData, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      });
+      return response.data;
+    } catch (error) {
+      console.error("Ошибка при загрузке PDF:", error);
+      throw error;
+    }
+  };
 
-    return { sentPDFs };
+  return { uploadPDFs };
 };

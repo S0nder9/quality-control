@@ -1,3 +1,7 @@
+using System.Text;
+using System.Text.Json;
+using Backend.Models;
+
 namespace Backend.Services
 {
     public class NeuralService : INeuralService
@@ -11,49 +15,61 @@ namespace Backend.Services
 
         public async Task<object> AnalyzeAsync(List<string> filePaths)
         {
-            await Task.Delay(2000);
-
-            var result = new
+            var requestBody = new
             {
-                page = 1,
-                summary = new
+                files = filePaths
+            };
+
+            var json = JsonSerializer.Serialize(requestBody);
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+            var response = await _httpClient.PostAsync(
+                "http://localhost:8000/analyze", // позже исправить на реальный url нейронки
+                content);
+
+            if (!response.IsSuccessStatusCode)
+                throw new Exception("Ошибка при вызове нейронки");
+
+            // return await response.Content.ReadAsStringAsync();
+
+            await Task.Delay(1500);
+
+            var result = new List<AnalysisResult>
+    {
+        new AnalysisResult
+        {
+            Page = 1,
+            Summary = new Summary
+            {
+                TotalErrors = 7,
+                IntersectionErrors = 3,
+                HatchingErrors = 2,
+                TextErrors = 2
+            },
+            Errors = new List<ErrorItem>
+            {
+                new ErrorItem
                 {
-                    total_errors = 7,
-                    intersection_errors = 3,
-                    hatching_errors = 2,
-                    text_errors = 2
-                },
-                errors = new object[]
-                {
-                    new
+                    Id = "err_001",
+                    Type = "intersection",
+                    Severity = "high",
+                    Message = "Неверное пересечение линий",
+                    Bbox = new BBox
                     {
-                        id = "err_001",
-                        type = "intersection",
-                        severity = "high",
-                        message = "Неверное пересечение линий",
-                        bbox = new { x = 120.5, y = 340.2, width = 10, height = 10 },
-                        metadata = new { angle_1 = 45, angle_2 = 90 }
+                        X = 120.5,
+                        Y = 340.2,
+                        Width = 10,
+                        Height = 10
                     },
-                    new
+                    Metadata = new Dictionary<string, object>
                     {
-                        id = "err_004",
-                        type = "hatching",
-                        severity = "medium",
-                        message = "Контур не заштрихован",
-                        bbox = new { x = 400.0, y = 200.0, width = 150, height = 120 },
-                        metadata = new { contour_area = 2340 }
-                    },
-                    new
-                    {
-                        id = "err_006",
-                        type = "text",
-                        severity = "low",
-                        message = "Ошибка в обозначении ГОСТ",
-                        bbox = new { x = 800.0, y = 950.0, width = 220, height = 40 },
-                        metadata = new { detected_text = "ГОС 123-45", suggestion = "ГОСТ 123-45" }
+                        { "angle_1", 45 },
+                        { "angle_2", 90 }
                     }
                 }
-            };
+            }
+        }
+    };
 
             return result;
         }

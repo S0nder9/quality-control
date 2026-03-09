@@ -15,24 +15,24 @@ namespace Backend.Services
 
         public async Task<object> AnalyzeAsync(List<string> filePaths)
         {
-            var requestBody = new
-            {
-                files = filePaths
-            };
+            // var requestBody = new
+            // {
+            //     files = filePaths
+            // };
 
-            var json = JsonSerializer.Serialize(requestBody);
-            var content = new StringContent(json, Encoding.UTF8, "application/json");
+            // var json = JsonSerializer.Serialize(requestBody);
+            // var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-            var response = await _httpClient.PostAsync(
-                "http://localhost:8000/analyze", // позже исправить на реальный url нейронки
-                content);
+            // var response = await _httpClient.PostAsync(
+            //     "http://localhost:8000/analyze", // позже исправить на реальный url нейронки
+            //     content);
 
-            if (!response.IsSuccessStatusCode)
-                throw new Exception("Ошибка при вызове нейронки");
+            // if (!response.IsSuccessStatusCode)
+            //     throw new Exception("Ошибка при вызове нейронки");
 
-            // return await response.Content.ReadAsStringAsync();
+            //  return await response.Content.ReadAsStringAsync();
 
-            await Task.Delay(1500);
+            // await Task.Delay(1500);
 
             var result = new List<AnalysisResult>
     {

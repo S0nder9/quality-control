@@ -1,25 +1,12 @@
 "use client";
 
+import { statusConfig } from "@/constants";
+
 type SystemStatus = "ready" | "processing" | "error";
 
 interface HeaderProps {
   status: SystemStatus;
 }
-
-const statusConfig = {
-  ready: {
-    label: "System Ready",
-    color: "bg-[#22c55e]",
-  },
-  processing: {
-    label: "Processing",
-    color: "bg-[#eab308]",
-  },
-  error: {
-    label: "Error",
-    color: "bg-[#dc2626]",
-  },
-};
 
 export function HeaderBlock({ status }: HeaderProps) {
   const config = statusConfig[status];

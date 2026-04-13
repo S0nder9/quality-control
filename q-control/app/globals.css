@@ -23,7 +23,7 @@
   --input: #1f1f1f;
   --ring: #dc2626;
   --radius: 0.5rem;
-  
+
   --severity-high: #dc2626;
   --severity-medium: #f97316;
   --severity-low: #eab308;
@@ -99,7 +99,22 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
+  }
+
+}
+
+@layer components {
+  .wrapper {
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+  }
+
+  .titleStyle {
+    @apply text-lg font-semibold text-[var(--foreground)] mb-4;
   }
 }

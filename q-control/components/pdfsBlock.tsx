@@ -16,8 +16,8 @@ export const PdfsBlock = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <div className="space-y-6">
-            <div className="bg-[var(--card)] rounded-lg border border-[var(--border)] p-6">
-              <h2 className="text-lg font-semibold text-[var(--foreground)] mb-4">
+            <div className="wrapper">
+              <h2 className="titleStyle">
                 Загрузка файлов
               </h2>
               <UploadZone
@@ -34,6 +34,26 @@ export const PdfsBlock = () => {
                   )}
                 </div>
               )}
+            </div>
+          </div>
+
+          <div className="space-y-6">
+            <div className="wrapper">
+              <div className="flex flex-row justify-between">
+                <h2 className="titleStyle">
+                  Результат анализа
+                </h2>
+
+                <h2 className="text-md font-semibold text-[var(--secondary-foreground)] mb-4">
+                 Всего ошибок: {0}
+                </h2>
+              </div>
+
+              {Array(5).map((el, index) => {
+
+              })}
+
+
             </div>
           </div>
         </div>
